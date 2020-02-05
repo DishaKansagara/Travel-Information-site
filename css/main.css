@@ -1,0 +1,463 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+/* landing page CSS*/
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(../images/WF_Miami.jpg);
+    background-repeat: no-repeat;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+    color: navajowhite;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 300%;
+}
+
+.btn {
+    border-radius: 9px;
+
+    color: navajowhite;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid navajowhite 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: orangered;
+    border: solid orangered 3px;
+}
+
+@media screen and(max-width: 768px) {
+
+    .content h1 {
+        font-size: 250%;
+    }
+
+    .btn {
+        font-size: 90%;
+        padding: 7px 15px;
+
+    }
+}
+
+
+/* Navigation CSS*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+.nav > .nav_h {
+    display: inline;
+}
+
+.nav > .nav_h > .nav_t {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav_icon {
+    display: none;
+}
+
+.nav > .nav_href {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav_href > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav > .nav_href > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #check_nav {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav > .nav_href {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav > .nav_href > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > .nav_icon {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+    }
+
+    .nav > .nav_icon > label:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > .nav_icon > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav > .nav_icon > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+
+    .nav > #check_nav:not(:checked) + .nav_href {
+        height: 0px;
+    }
+
+    .nav > #check_nav:checked + .nav_href {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+/* Banner */
+
+@media only screen and (max-width: 600px) {
+    .banner img {
+        width: 100%;
+        height: auto;
+        ;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .banner {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+/* About us content */
+
+#about_miami {
+    text-align: center;
+    line-height: inherit;
+    font-family: 'Ariel', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.content_about {
+
+    padding-left: 20px;
+    width: 100% margin: 0 auto;
+    text-align: left;
+
+}
+
+/* About us image gallery (popular places)*/
+
+
+
+div.pic img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .gallery {
+        width: 49.99999%;
+        margin: 6px 0;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.clear_img_fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Video embed */
+
+.video {
+    padding: 20px;
+}
+
+.video iframe {
+
+    width: 100%;
+    border: none;
+    height: 600px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .video iframe {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .video iframe {
+        width: 100%;
+
+
+    }
+}
+
+
+/* Footer */
+footer {
+    height: auto;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* table in the Restaurant page */
+
+table {
+    
+    border-collapse: collapse;
+    border: none;
+    
+}
+
+/* Zebra striping */
+tr:nth-of-type(even) {
+    background: #eee;
+}
+
+th {
+
+    color: black;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 6px;
+   
+    text-align: left;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+/* contact */
+    
+ * {
+  box-sizing: border-box;
+}
+
+input[type=text], email, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+margin-left: 100px;
+    width: 75%
+   
+  
+}
+
+input[type=submit]:hover {
+  background-color: gainsboro;
+}
+
+.container {
+
+max-width: 50%;
+ 
+   margin-top: 50px;
+    padding: 0;
+    margin-bottom: 142px;
+
+
+}
+
+.col_1 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col_2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col_1, .col_2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      margin-left: 0;
+      
+  }
+}
+
+@media screen and (max-width: 1028px ) {
+  .col_1, .col_2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      margin-left: 0;
+  }
+}
+
